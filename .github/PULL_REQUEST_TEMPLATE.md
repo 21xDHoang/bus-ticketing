@@ -2,11 +2,10 @@
 
 - **Issue:** #
 - **Sprint:**
-- **Story ID (trong chh.xlsx):**
 
 ## Đã làm gì
 
-<!-- Mô tả ngắn gọn những gì bạn đã thay đổi -->
+<!-- 2-3 dòng mô tả thay đổi -->
 
 ## Cách kiểm tra
 
@@ -15,14 +14,12 @@
 1.
 2.
 
-## Checklist — Definition of Done
+## Checklist
 
-- [ ] Build không lỗi (CI xanh)
-- [ ] Đã tự chạy thử trên máy mình
-- [ ] Không hardcode API key / connection string / mật khẩu
-- [ ] Swagger đã cập nhật (nếu là API mới)
-- [ ] `docs/api-contract.md` đã cập nhật (nếu có đổi hợp đồng API)
-- [ ] Không còn `TODO` trong code
+- [ ] CI trên GitHub báo xanh ✅
+- [ ] Đã tự chạy thử trên máy mình, kể cả **trường hợp nhập sai**
+- [ ] Không hardcode API key / mật khẩu / connection string
+- [ ] Nếu làm API mới → đã cập nhật `docs/api-contract.md`
 
 ## Ảnh chụp màn hình (nếu là giao diện)
 

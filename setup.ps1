@@ -49,13 +49,19 @@ Write-Host "  npm : $(npm -v)" -ForegroundColor Green
 Write-Host ""
 Write-Host "[3/5] Cai dotnet-ef (cong cu tao Migration)..." -ForegroundColor Yellow
 
-dotnet tool install --global dotnet-ef 2>&1 | Out-Null
-dotnet tool update  --global dotnet-ef 2>&1 | Out-Null
+$efInstalled = dotnet tool list --global | Select-String "dotnet-ef"
+if ($efInstalled) {
+    dotnet tool update --global dotnet-ef --version 10.0.12 2>&1 | Out-Null
+} else {
+    dotnet tool install --global dotnet-ef --version 10.0.12 2>&1 | Out-Null
+}
 
-if (Get-Command dotnet-ef -ErrorAction SilentlyContinue) {
-    Write-Host "  Xong" -ForegroundColor Green
+$efPath = "$HOME\.dotnet\tools"
+if (Test-Path "$efPath\dotnet-ef.exe") {
+    Write-Host "  Xong (dotnet-ef 10.0.12)" -ForegroundColor Green
 } else {
     Write-Host "  CANH BAO: Cai dotnet-ef that bai. Thu chay lai sau." -ForegroundColor Red
+    Write-Host "  Neu van loi, mo PowerShell MOI roi chay lai script nay." -ForegroundColor Red
 }
 
 # ---------- 4. Restore backend ----------
