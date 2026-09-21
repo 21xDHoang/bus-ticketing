@@ -2,6 +2,13 @@
 
 Đồ án nhóm — Khoa Công nghệ thông tin
 
+> ## 📘 Thành viên mới vào nhóm — đọc cái này trước
+>
+> **→ [docs/huong-dan/](docs/huong-dan/)** — bộ tài liệu hướng dẫn đầy đủ:
+> cài đặt môi trường · hiểu dự án · cách dùng Git · **Sprint 1 bạn làm file nào**
+>
+> Mất 90 phút đọc, tiết kiệm hàng chục giờ mò mẫm. **Bắt buộc đọc trước khi nhận task.**
+
 ---
 
 ## Thành viên
@@ -142,8 +149,13 @@ bus-ticketing/
 │       └── main.tsx                  ← Điểm khởi động
 │
 ├── docs/
+│   ├── huong-dan/                    ← 📘 BỘ TÀI LIỆU CHO THÀNH VIÊN MỚI
+│   │   ├── README.md                 ←    Mục lục — đọc đầu tiên
+│   │   ├── 01-cai-dat.md             ←    Cài đặt môi trường
+│   │   ├── 02-hieu-du-an.md          ←    Hiểu dự án & kiến trúc
+│   │   ├── 03-lam-viec-nhom.md       ←    Git, pull/push, code xong làm gì
+│   │   └── 04-sprint-1.md            ←    Phân công Sprint 1 — ai làm file nào
 │   ├── api-contract.md               ← 🔴 HỢP ĐỒNG API — đọc trước khi code
-│   ├── quy-trinh.md                  ← 🔴 Quy trình làm việc — đọc trước khi nhận task
 │   └── sprint/                       ← Artifact từng Sprint (burn-down, retro...)
 │
 ├── .github/workflows/ci.yml          ← CI tự động build khi có Pull Request
@@ -189,7 +201,7 @@ Nhìn thấy nhiều file lạ thì đừng lo. **Hầu hết các bạn không 
 
 ### 1. Không push thẳng lên `main`
 
-Mọi thay đổi phải qua Pull Request. Quy trình 6 bước nằm ở **[`docs/quy-trinh.md`](docs/quy-trinh.md)** — làm đúng theo đó, không cần nhớ gì thêm.
+Mọi thay đổi phải qua Pull Request. Quy trình 6 bước nằm ở **[`docs/huong-dan/03-lam-viec-nhom.md`](docs/huong-dan/03-lam-viec-nhom.md)** — làm đúng theo đó, không cần nhớ gì thêm.
 
 ### 2. Không bao giờ commit bí mật
 
@@ -216,5 +228,6 @@ Muốn đổi API? **Sửa file đó trước** → báo cho người còn lại
 
 ## Tài liệu
 
+- 📘 [Hướng dẫn thành viên](docs/huong-dan/) — **bắt đầu ở đây nếu bạn mới vào nhóm**
 - 🔴 [Hợp đồng API](docs/api-contract.md) — đọc trước khi code
-- 🔴 [Quy trình làm việc](docs/quy-trinh.md) — đọc trước khi nhận task
+- 📄 [Bản DOCX](docs/huong-dan/docx/) — bộ hướng dẫn dạng Word để in / gửi mentor
