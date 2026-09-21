@@ -2,7 +2,7 @@
   "recommendations": [
     "ms-dotnettools.csdevkit",
     "ms-dotnettools.csharp",
-    "dbaeumer.vscode-eslint",
+    "oxc.oxc-vscode",
     "esbenp.prettier-vscode",
     "ms-mssql.mssql",
     "rangav.vscode-thunder-client",
