@@ -1,0 +1,34 @@
+# ============================================================
+#  .editorconfig - Quy dinh cach thut le cho ca nhom
+#  VS Code tu dong doc file nay. Khong can cai gi them.
+# ============================================================
+
+root = true
+
+[*]
+charset = utf-8
+end_of_line = crlf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+
+# ---------- C# : thut 4 dau cach ----------
+[*.cs]
+indent_size = 4
+csharp_new_line_before_open_brace = all
+dotnet_sort_system_directives_first = true
+csharp_style_namespace_declarations = file_scoped:suggestion
+
+[*.{csproj,props,targets,sln}]
+indent_size = 2
+
+# ---------- Web : thut 2 dau cach ----------
+[*.{ts,tsx,js,jsx,json,jsonc,css,scss,html}]
+indent_size = 2
+
+[*.yml]
+indent_size = 2
+
+# ---------- Markdown : khong cat khoang trang cuoi dong ----------
+[*.md]
+trim_trailing_whitespace = false

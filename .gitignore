@@ -1,0 +1,64 @@
+# ============================================================
+#  .gitignore - Danh sach nhung thu Git PHAI BO QUA
+#  KHONG xoa file nay. No la tam khien chan lo API key.
+# ============================================================
+
+# ==================== .NET / C# ====================
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+[Ll]og/
+[Ll]ogs/
+publish/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.tlog
+.vs/
+
+# ==================== Node / React ====================
+node_modules/
+dist/
+dist-ssr/
+.vite/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.eslintcache
+
+# ==================== BI MAT - TUYET DOI KHONG COMMIT ====================
+# Neu lo commit cac file nay len GitHub, phai DOI KEY NGAY LAP TUC
+.env
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
+appsettings.Production.json
+appsettings.Local.json
+secrets.json
+*.pfx
+*.p12
+*.key
+
+# ==================== VS Code ====================
+# Chan tat ca, chi cho phep 4 file dung chung cho ca nhom
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# ==================== He dieu hanh ====================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# ==================== Khac ====================
+*.tmp
+*.bak
+*.swp
+.idea/

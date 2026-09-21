@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "ms-dotnettools.csdevkit",
+    "ms-dotnettools.csharp",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "ms-mssql.mssql",
+    "rangav.vscode-thunder-client",
+    "eamodio.gitlens",
+    "usernamehw.errorlens",
+    "streetsidesoftware.code-spell-checker"
+  ]
+}
